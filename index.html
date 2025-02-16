@@ -43,6 +43,14 @@
         <ul id="cart-items" class="list-group list-group-flush"></ul>
         <div class="p-3">
             <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+            <div class="promo-code">
+                <input type="text" id="promo-input" class="form-control" placeholder="Enter promo code">
+                <button class="btn btn-primary mt-2" onclick="applyPromoCode()">Apply</button>
+                <p id="promo-message" class="text-danger mt-1"></p>
+            </div>
+    
+            <p><strong>Discount:</strong> $<span id="cart-discount">0.00</span></p>
+            <p><strong>Final Total:</strong> $<span id="cart-total">0.00</span></p>
             <button class="btn btn-danger w-100 mb-2" id="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
             <button class="btn btn-success w-100">Checkout</button>
         </div>
